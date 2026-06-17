@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import pageobjects.MainPage;
 import pageobjects.OrderPage;
 
@@ -52,8 +53,16 @@ public class OrderTest {
 
     @Before
     public void setup() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        String browser = System.getProperty("browser", "chrome");
+
+        if ("firefox".equalsIgnoreCase(browser)) {
+            WebDriverManager.firefoxdriver().driverVersion("0.33.0").setup();
+            driver = new FirefoxDriver();
+        } else {
+            WebDriverManager.chromedriver().setup();
+            driver = new ChromeDriver();
+        }
+
         mainPage = new MainPage(driver);
         orderPage = new OrderPage(driver);
     }

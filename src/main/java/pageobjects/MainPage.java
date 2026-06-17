@@ -28,23 +28,25 @@ public class MainPage {
     // Список всех элементов FAQ:
     // Вопросы:
     private By question0 = By.id("accordion__heading-0");//Сколько это стоит? И как оплатить?
-    private By question1 = By.id("accordion__heading-1");//Хочу сразу несколько самокатов! Так можно?
-    private By question2 = By.id("accordion__heading-2");//Как рассчитывается время аренды?
-    private By question3 = By.id("accordion__heading-3");//Можно ли заказать самокат прямо на сегодня?
-    private By question4 = By.id("accordion__heading-4");//Можно ли продлить заказ или вернуть самокат раньше?
-    private By question5 = By.id("accordion__heading-5");//Вы привозите зарядку вместе с самокатом?
-    private By question6 = By.id("accordion__heading-6");//Можно ли отменить заказ?
-    private By question7 = By.id("accordion__heading-7");//Я жизу за МКАДом, привезёте?
+    // Вопросы:
+    private By firstQuestion0 = By.id("accordion__heading-0");//Сколько это стоит? И как оплатить?
+    private By secondQuestion  = By.id("accordion__heading-1");//Хочу сразу несколько самокатов! Так можно?
+    private By thirdQuestion  = By.id("accordion__heading-2");//Как рассчитывается время аренды?
+    private By fourthQuestion  = By.id("accordion__heading-3");//Можно ли заказать самокат прямо на сегодня?
+    private By fifthQuestion  = By.id("accordion__heading-4");//Можно ли продлить заказ или вернуть самокат раньше?
+    private By sixthQuestion  = By.id("accordion__heading-5");//Вы привозите зарядку вместе с самокатом?
+    private By seventhQuestion  = By.id("accordion__heading-6");//Можно ли отменить заказ?
+    private By eighthQuestion  = By.id("accordion__heading-7");//Я жизу за МКАДом, привезёте?
 
     //Ответы
-    private By answer0 = By.id("accordion__panel-0");//Сутки — 400 рублей. Оплата курьеру — наличными или картой.
-    private By answer1 = By.id("accordion__panel-1");//Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим.
-    private By answer2 = By.id("accordion__panel-2");//Допустим, вы оформляете заказ на 8 мая. Мы привозим самокат 8 мая в течение дня. Отсчёт времени аренды начинается с момента, когда вы оплатите заказ курьеру. Если мы привезли самокат 8 мая в 20:30, суточная аренда закончится 9 мая в 20:30.
-    private By answer3 = By.id("accordion__panel-3");//Только начиная с завтрашнего дня. Но скоро станем расторопнее.
-    private By answer4 = By.id("accordion__panel-4");//Пока что нет! Но если что-то срочное — всегда можно позвонить в поддержку по красивому номеру 1010.
-    private By answer5 = By.id("accordion__panel-5");//Самокат приезжает к вам с полной зарядкой. Этого хватает на восемь суток — даже если будете кататься без передышек и во сне. Зарядка не понадобится.
-    private By answer6 = By.id("accordion__panel-6");//Да, пока самокат не привезли. Штрафа не будет, объяснительной записки тоже не попросим. Все же свои.
-    private By answer7 = By.id("accordion__panel-7");//Да, обязательно. Всем самокатов! И Москве, и Московской области.
+    private By firstAnswer = By.id("accordion__panel-0");//Сутки — 400 рублей. Оплата курьеру — наличными или картой.
+    private By secondAnswer = By.id("accordion__panel-1");//Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим.
+    private By thirdAnswer = By.id("accordion__panel-2");//Допустим, вы оформляете заказ на 8 мая. Мы привозим самокат 8 мая в течение дня. Отсчёт времени аренды начинается с момента, когда вы оплатите заказ курьеру. Если мы привезли самокат 8 мая в 20:30, суточная аренда закончится 9 мая в 20:30.
+    private By fourtAnswer = By.id("accordion__panel-3");//Только начиная с завтрашнего дня. Но скоро станем расторопнее.
+    private By fifthAnswer = By.id("accordion__panel-4");//Пока что нет! Но если что-то срочное — всегда можно позвонить в поддержку по красивому номеру 1010.
+    private By sixthAnswer = By.id("accordion__panel-5");//Самокат приезжает к вам с полной зарядкой. Этого хватает на восемь суток — даже если будете кататься без передышек и во сне. Зарядка не понадобится.
+    private By seventhAnswer = By.id("accordion__panel-6");//Да, пока самокат не привезли. Штрафа не будет, объяснительной записки тоже не попросим. Все же свои.
+    private By eighthAnswer = By.id("accordion__panel-7");//Да, обязательно. Всем самокатов! И Москве, и Московской области.
 
     public MainPage(WebDriver driver){
         this.driver = driver;
