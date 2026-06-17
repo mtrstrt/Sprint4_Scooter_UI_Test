@@ -29,7 +29,7 @@ public class MainPage {
     // Вопросы:
     private By question0 = By.id("accordion__heading-0");//Сколько это стоит? И как оплатить?
     // Вопросы:
-    private By firstQuestion0 = By.id("accordion__heading-0");//Сколько это стоит? И как оплатить?
+    private By firstQuestion = By.id("accordion__heading-0");//Сколько это стоит? И как оплатить?
     private By secondQuestion  = By.id("accordion__heading-1");//Хочу сразу несколько самокатов! Так можно?
     private By thirdQuestion  = By.id("accordion__heading-2");//Как рассчитывается время аренды?
     private By fourthQuestion  = By.id("accordion__heading-3");//Можно ли заказать самокат прямо на сегодня?
